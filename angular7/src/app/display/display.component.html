@@ -1,0 +1,19 @@
+<table class="table table-hover" >
+  <thead>
+  <tr>
+      <td>Thread ID</td>
+      <td>Thread Type</td>
+      <td>Created date</td>
+      <td>Updated Date</td>
+      <td>Channel Name</td>
+  </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let thread of threads | async">
+          <td>{{ thread.threadId }}</td>
+          <td>{{ thread.threadType }}</td>
+          <td>{{ thread.createDate }}</td>
+          <td>{{ thread.updateDate }}</td>
+          <td>{{ thread.channelName }}</td>
+      </tr>
+  </tbody>
